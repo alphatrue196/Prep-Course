@@ -161,7 +161,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.rendom();
+  return Math.rendom(1);
 }
 
 function esPositivo(numero) {
@@ -172,21 +172,26 @@ function esPositivo(numero) {
   if(numero === 0) {
     return false;
 }
+else if(numero > 0) {
+  return "Es positivo";
+}
 else {
-  return "Es negativo"
+  return "Es negativo";
 }
 }
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  return str + '!';
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  var combinado = nombre + ' ' + apellido;
+  return combinado;
 }
 
 function obtenerSaludo(nombre) {
