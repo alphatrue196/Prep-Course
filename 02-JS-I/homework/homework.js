@@ -71,11 +71,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1 === str2) {
-    return true;
-} else {
-  return false;
- }
+  return str1.length === str2.length;
 }
 
 function menosQueNoventa(num) {
@@ -161,7 +157,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.rendom(1);
+  return Math.random();
 }
 
 function esPositivo(numero) {
