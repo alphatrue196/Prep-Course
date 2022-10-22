@@ -18,6 +18,9 @@ function mayoriaDeEdad(edad) {
   if(edad >= 18) {
     return "Allowed";
   }
+  else {
+    return "Not Allowed";
+  }
 }
   
 function conection(status) {
@@ -29,8 +32,11 @@ function conection(status) {
   if(status === 1) {
     return "online";
   }
-  else {
-    return "offline";
+  else if(status === 2) {
+    return "Away";
+   }
+   else {
+   return "offline";
   }
 }
 
